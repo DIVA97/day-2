@@ -1,0 +1,29 @@
+1.THE DIFFERENC BETWEEN DOCUMENT & WINDOW OBJJECTS?
+
+DOCUMENT OBJECT
+	Document is a window functionality and it place where the HTML elements will get loaded.
+WINDOW OBJECT
+	Window is a global object, it is already available for everone across the window scope.
+
+2.codekata practice
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+  //start-here
+  var getinput = userInput[0];
+  
+  console.log(getinput);
+    
+});
